@@ -488,14 +488,14 @@ blockquote {
 	margin-top: 0.25em;
 }
 
-.sans { font-family: ui-sans-serif, -apple-system, BlinkMacSystemFont, "Segoe UI", Helvetica, "Apple Color Emoji", Arial, sans-serif, "Segoe UI Emoji", "Segoe UI Symbol"; }
+.sans { font-family: ui-sans-serif, -apple-system, BlinkMacSystemFont, "Segoe UI Variable Display", "Segoe UI", Helvetica, "Apple Color Emoji", Arial, sans-serif, "Segoe UI Emoji", "Segoe UI Symbol"; }
 .code { font-family: "SFMono-Regular", Menlo, Consolas, "PT Mono", "Liberation Mono", Courier, monospace; }
 .serif { font-family: Lyon-Text, Georgia, ui-serif, serif; }
 .mono { font-family: iawriter-mono, Nitti, Menlo, Courier, monospace; }
-.pdf .sans { font-family: Inter, ui-sans-serif, -apple-system, BlinkMacSystemFont, "Segoe UI", Helvetica, "Apple Color Emoji", Arial, sans-serif, "Segoe UI Emoji", "Segoe UI Symbol", 'Twemoji', 'Noto Color Emoji', 'Noto Sans CJK JP'; }
-.pdf:lang(zh-CN) .sans { font-family: Inter, ui-sans-serif, -apple-system, BlinkMacSystemFont, "Segoe UI", Helvetica, "Apple Color Emoji", Arial, sans-serif, "Segoe UI Emoji", "Segoe UI Symbol", 'Twemoji', 'Noto Color Emoji', 'Noto Sans CJK SC'; }
-.pdf:lang(zh-TW) .sans { font-family: Inter, ui-sans-serif, -apple-system, BlinkMacSystemFont, "Segoe UI", Helvetica, "Apple Color Emoji", Arial, sans-serif, "Segoe UI Emoji", "Segoe UI Symbol", 'Twemoji', 'Noto Color Emoji', 'Noto Sans CJK TC'; }
-.pdf:lang(ko-KR) .sans { font-family: Inter, ui-sans-serif, -apple-system, BlinkMacSystemFont, "Segoe UI", Helvetica, "Apple Color Emoji", Arial, sans-serif, "Segoe UI Emoji", "Segoe UI Symbol", 'Twemoji', 'Noto Color Emoji', 'Noto Sans CJK KR'; }
+.pdf .sans { font-family: Inter, ui-sans-serif, -apple-system, BlinkMacSystemFont, "Segoe UI Variable Display", "Segoe UI", Helvetica, "Apple Color Emoji", Arial, sans-serif, "Segoe UI Emoji", "Segoe UI Symbol", 'Twemoji', 'Noto Color Emoji', 'Noto Sans CJK JP'; }
+.pdf:lang(zh-CN) .sans { font-family: Inter, ui-sans-serif, -apple-system, BlinkMacSystemFont, "Segoe UI Variable Display", "Segoe UI", Helvetica, "Apple Color Emoji", Arial, sans-serif, "Segoe UI Emoji", "Segoe UI Symbol", 'Twemoji', 'Noto Color Emoji', 'Noto Sans CJK SC'; }
+.pdf:lang(zh-TW) .sans { font-family: Inter, ui-sans-serif, -apple-system, BlinkMacSystemFont, "Segoe UI Variable Display", "Segoe UI", Helvetica, "Apple Color Emoji", Arial, sans-serif, "Segoe UI Emoji", "Segoe UI Symbol", 'Twemoji', 'Noto Color Emoji', 'Noto Sans CJK TC'; }
+.pdf:lang(ko-KR) .sans { font-family: Inter, ui-sans-serif, -apple-system, BlinkMacSystemFont, "Segoe UI Variable Display", "Segoe UI", Helvetica, "Apple Color Emoji", Arial, sans-serif, "Segoe UI Emoji", "Segoe UI Symbol", 'Twemoji', 'Noto Color Emoji', 'Noto Sans CJK KR'; }
 .pdf .code { font-family: Source Code Pro, "SFMono-Regular", Menlo, Consolas, "PT Mono", "Liberation Mono", Courier, monospace, 'Twemoji', 'Noto Color Emoji', 'Noto Sans Mono CJK JP'; }
 .pdf:lang(zh-CN) .code { font-family: Source Code Pro, "SFMono-Regular", Menlo, Consolas, "PT Mono", "Liberation Mono", Courier, monospace, 'Twemoji', 'Noto Color Emoji', 'Noto Sans Mono CJK SC'; }
 .pdf:lang(zh-TW) .code { font-family: Source Code Pro, "SFMono-Regular", Menlo, Consolas, "PT Mono", "Liberation Mono", Courier, monospace, 'Twemoji', 'Noto Color Emoji', 'Noto Sans Mono CJK TC'; }
@@ -546,6 +546,9 @@ blockquote {
 .highlight-red {
 	color: rgba(212, 76, 71, 1);
 	fill: rgba(212, 76, 71, 1);
+}
+.highlight-default_background {
+	color: rgba(55, 53, 47, 1);
 }
 .highlight-gray_background {
 	background: rgba(241, 241, 239, 1);
@@ -614,6 +617,10 @@ blockquote {
 	color: rgba(212, 76, 71, 1);
 	fill: rgba(212, 76, 71, 1);
 }
+.block-color-default_background {
+	color: inherit;
+	fill: inherit;
+}
 .block-color-gray_background {
 	background: rgba(241, 241, 239, 1);
 }
@@ -641,16 +648,20 @@ blockquote {
 .block-color-red_background {
 	background: rgba(253, 235, 236, 1);
 }
+.select-value-color-uiBlue { background-color: rgba(35, 131, 226, .07); }
 .select-value-color-pink { background-color: rgba(245, 224, 233, 1); }
 .select-value-color-purple { background-color: rgba(232, 222, 238, 1); }
 .select-value-color-green { background-color: rgba(219, 237, 219, 1); }
 .select-value-color-gray { background-color: rgba(227, 226, 224, 1); }
-.select-value-color-translucentGray { background-color: rgba(255, 255, 255, 0.0375); }
+.select-value-color-transparentGray { background-color: rgba(227, 226, 224, 0); }
+.select-value-color-translucentGray { background-color: rgba(0, 0, 0, 0.06); }
 .select-value-color-orange { background-color: rgba(250, 222, 201, 1); }
 .select-value-color-brown { background-color: rgba(238, 224, 218, 1); }
 .select-value-color-red { background-color: rgba(255, 226, 221, 1); }
 .select-value-color-yellow { background-color: rgba(253, 236, 200, 1); }
 .select-value-color-blue { background-color: rgba(211, 229, 239, 1); }
+.select-value-color-pageGlass { background-color: undefined; }
+.select-value-color-washGlass { background-color: undefined; }
 
 .checkbox {
 	display: inline-flex;
@@ -670,29 +681,29 @@ blockquote {
 	background-image: url("data:image/svg+xml;charset=UTF-8,%3Csvg%20width%3D%2216%22%20height%3D%2216%22%20viewBox%3D%220%200%2016%2016%22%20fill%3D%22none%22%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%3E%0A%3Crect%20x%3D%220.75%22%20y%3D%220.75%22%20width%3D%2214.5%22%20height%3D%2214.5%22%20fill%3D%22white%22%20stroke%3D%22%2336352F%22%20stroke-width%3D%221.5%22%2F%3E%0A%3C%2Fsvg%3E");
 }
 	
-</style></head><body><article id="516dfa84-2774-4424-9ffb-cafba8942eef" class="page sans"><header><div class="page-header-icon undefined"><img class="icon" src="https://www.notion.so/icons/create_gray.svg"/></div><h1 class="page-title">Art</h1><p class="page-description"></p></header><div class="page-body"><div id="f22d7350-3c73-463c-b05d-466a03fed8aa" class="column-list"><div id="96b179c3-582a-4ab6-8669-016c1bcb3b66" style="width:50%" class="column"><figure id="b353c14d-e432-4a50-b110-1424d1935bd5" class="image"><a href="Art%20516dfa84277444249ffbcafba8942eef/Untitled.jpeg"><img style="width:587px" src="Art%20516dfa84277444249ffbcafba8942eef/Untitled.jpeg"/></a></figure><p id="daa6db37-9544-4cd8-b60e-01ffdc4c627a" class="">
-</p><figure id="9662018d-0a26-48f3-932d-8173b48b2305" class="image"><a href="Art%20516dfa84277444249ffbcafba8942eef/Untitled%201.jpeg"><img style="width:624px" src="Art%20516dfa84277444249ffbcafba8942eef/Untitled%201.jpeg"/></a></figure><p id="8fcdb433-547f-49e4-8a0c-d8590f0b084d" class="">
-</p><figure id="8e56db61-ea16-4fdf-a658-29c540207b5d" class="image"><a href="Art%20516dfa84277444249ffbcafba8942eef/Untitled%202.jpeg"><img style="width:432px" src="Art%20516dfa84277444249ffbcafba8942eef/Untitled%202.jpeg"/></a></figure><p id="aa7d41b2-4728-418d-a8d0-7a4974c52bec" class="">
-</p><figure id="8c6ee2be-36bc-415c-ace3-cf9931dc3810" class="image"><a href="Art%20516dfa84277444249ffbcafba8942eef/Untitled%203.jpeg"><img style="width:412px" src="Art%20516dfa84277444249ffbcafba8942eef/Untitled%203.jpeg"/></a></figure><p id="14363860-195e-46ea-9468-799b907a4099" class="">
-</p><figure id="235a84b6-209a-4efe-9797-50e26a029c10" class="image"><a href="Art%20516dfa84277444249ffbcafba8942eef/Untitled%204.jpeg"><img style="width:480px" src="Art%20516dfa84277444249ffbcafba8942eef/Untitled%204.jpeg"/></a></figure><p id="7165f0ef-a757-463a-8991-49de95bf638d" class="">
-</p><figure id="add19558-c073-4922-8415-f42ab6bb957c" class="image"><a href="Art%20516dfa84277444249ffbcafba8942eef/Untitled%205.jpeg"><img style="width:644px" src="Art%20516dfa84277444249ffbcafba8942eef/Untitled%205.jpeg"/></a></figure><p id="914f85e5-edca-4dbc-9f76-111fa3a7a0b1" class="">
-</p><figure id="830d19c1-4067-4c63-979a-760c0976941f" class="image"><a href="Art%20516dfa84277444249ffbcafba8942eef/Untitled%206.jpeg"><img style="width:432px" src="Art%20516dfa84277444249ffbcafba8942eef/Untitled%206.jpeg"/></a></figure><p id="df1e979c-c3bc-409b-8e3c-c41df654c85e" class="">
-</p><figure id="53777e2d-5be3-45a2-968e-51930e455cce" class="image"><a href="Art%20516dfa84277444249ffbcafba8942eef/Untitled%207.jpeg"><img style="width:432px" src="Art%20516dfa84277444249ffbcafba8942eef/Untitled%207.jpeg"/></a></figure><p id="873510f3-d75f-48fa-9212-ce3d19565b91" class="">
-</p><figure id="eacb0c67-6b28-40f1-a8bc-89ae29a9f7c1" class="image"><a href="Art%20516dfa84277444249ffbcafba8942eef/Untitled%208.jpeg"><img style="width:384px" src="Art%20516dfa84277444249ffbcafba8942eef/Untitled%208.jpeg"/></a></figure><p id="15819cf2-0e72-4260-90a2-1ff4e498c11d" class="">
-</p><figure id="ee790932-4d5d-4348-8dd5-a51619bb6c9a" class="image"><a href="Art%20516dfa84277444249ffbcafba8942eef/Untitled%209.jpeg"><img style="width:384px" src="Art%20516dfa84277444249ffbcafba8942eef/Untitled%209.jpeg"/></a></figure></div><div id="53921e26-a218-4344-bbd9-8a642ffe6867" style="width:50%" class="column"><figure id="f0781d5a-9d9f-4961-a7e0-43957a4cb3f0" class="image"><a href="Art%20516dfa84277444249ffbcafba8942eef/Untitled%2010.jpeg"><img style="width:480px" src="Art%20516dfa84277444249ffbcafba8942eef/Untitled%2010.jpeg"/></a></figure><figure id="b1dbe923-6228-401b-8add-2b585a5bd727" class="image"><a href="Art%20516dfa84277444249ffbcafba8942eef/Untitled%2011.jpeg"><img style="width:535px" src="Art%20516dfa84277444249ffbcafba8942eef/Untitled%2011.jpeg"/></a></figure><p id="6eb63f0f-b488-4eec-aded-6331e3d46e4b" class="">
-</p><figure id="34f05a67-8d7b-4ac6-a412-86046a01d3f0" class="image"><a href="Art%20516dfa84277444249ffbcafba8942eef/Untitled%2012.jpeg"><img style="width:792px" src="Art%20516dfa84277444249ffbcafba8942eef/Untitled%2012.jpeg"/></a></figure><p id="fa44cc58-9959-4fb0-907a-54d509ac9726" class="">
-</p><figure id="e13f4e8e-30bf-4477-9981-2b64af8e69cb" class="image"><a href="Art%20516dfa84277444249ffbcafba8942eef/Untitled%2013.jpeg"><img style="width:661px" src="Art%20516dfa84277444249ffbcafba8942eef/Untitled%2013.jpeg"/></a></figure><p id="06da0c0f-6d35-4f46-8fe1-509ccc06b93b" class="">
-</p><figure id="49b9b1c2-750e-473f-9e3c-78baa2ef163f" class="image"><a href="Art%20516dfa84277444249ffbcafba8942eef/Untitled%2014.jpeg"><img style="width:447px" src="Art%20516dfa84277444249ffbcafba8942eef/Untitled%2014.jpeg"/></a></figure><p id="e59d9e80-945b-4e0f-9f2d-32de4210da0f" class="">
-</p><figure id="3c76a1c3-4798-42e2-a9d6-1354081ca650" class="image"><a href="Art%20516dfa84277444249ffbcafba8942eef/Untitled%2015.jpeg"><img style="width:480px" src="Art%20516dfa84277444249ffbcafba8942eef/Untitled%2015.jpeg"/></a></figure><p id="0690f951-8625-458e-aac9-adb5d3f3920a" class="">
-</p><figure id="44ffb5b9-c7ca-4325-9c4b-8cd4ff130ae6" class="image"><a href="Art%20516dfa84277444249ffbcafba8942eef/Untitled%2016.jpeg"><img style="width:631px" src="Art%20516dfa84277444249ffbcafba8942eef/Untitled%2016.jpeg"/></a></figure><p id="3e65cbaa-e5a8-4c27-a1b8-42eedb2c2d66" class="">
-</p><figure id="9dfaa781-50a0-44f4-83ee-3c4cfc029926" class="image"><a href="Art%20516dfa84277444249ffbcafba8942eef/Untitled%2017.jpeg"><img style="width:528px" src="Art%20516dfa84277444249ffbcafba8942eef/Untitled%2017.jpeg"/></a></figure><p id="c5d1765d-e0db-48ce-a032-7e56cebe0e1f" class="">
-</p><figure id="720092d1-2608-41fd-b740-2fce74d488a9" class="image"><a href="Art%20516dfa84277444249ffbcafba8942eef/Untitled%2018.jpeg"><img style="width:288px" src="Art%20516dfa84277444249ffbcafba8942eef/Untitled%2018.jpeg"/></a></figure><p id="2cb00eff-cf45-4bf4-825b-2643be3da9e4" class="">
-</p><figure id="0f7f7e5f-6a63-4cc9-b08b-2c5b1852736c" class="image"><a href="Art%20516dfa84277444249ffbcafba8942eef/Untitled%2019.jpeg"><img style="width:863px" src="Art%20516dfa84277444249ffbcafba8942eef/Untitled%2019.jpeg"/></a></figure><p id="069bdfd6-0fbc-4fff-a7dd-7cb9b6b96fe5" class="">
-</p><figure id="cc2ac1ad-31b5-4950-b5ad-d67b535c0cdf" class="image"><a href="Art%20516dfa84277444249ffbcafba8942eef/Untitled%2020.jpeg"><img style="width:288px" src="Art%20516dfa84277444249ffbcafba8942eef/Untitled%2020.jpeg"/></a></figure></div></div><div id="a493fab3-d68a-43b2-84e1-753fedf1c0c1" class="column-list"><div id="e0a76557-b6c0-4f36-8503-0dfbbff2a986" style="width:45.83333333333333%" class="column"><p id="2d6ad3a7-cbea-4d4b-8d59-cdf3033f3130" class="">
-</p></div><div id="699b41d9-d895-43b7-a59c-0dea01629530" style="width:24.999999999999993%" class="column"><p id="909b0880-1303-4046-9539-8cf8827aedc0" class="">
-</p><p id="5953bbf5-024d-4d53-89ee-93b2a85fab41" class="">
-</p><p id="060d74c8-bd26-4f0a-9909-5dbde7e46031" class="">
-</p></div><div id="bede3d96-a288-4f72-9314-76150f525b15" style="width:29.166666666666714%" class="column"><p id="b3627ca9-77b0-4689-9868-fd3e3c94cc70" class="">
-</p></div></div><p id="32fbbf87-2e1f-4a1a-8fd5-2743699624b7" class="">
-</p><p id="2e9ac4aa-e0c7-4a9e-bcee-864c5c26f064" class=""><mark class="highlight-gray">©️2023 Navreet Kaur</mark></p><p id="1588c5a4-1cec-4bd8-a271-0ddb1a69ee1e" class="">
-</p></div></article></body></html>
+</style></head><body><article id="121afc89-995a-81d9-8852-c03bf34ab26c" class="page sans"><header><div class="page-header-icon undefined"><img class="icon" src="https://www.notion.so/icons/create_gray.svg"/></div><h1 class="page-title">Art</h1><p class="page-description"></p></header><div class="page-body"><div id="124afc89-995a-8095-b36d-ce6aeffc4bc6" class="column-list"><div id="c2090096-3ad8-4494-8f80-673ee231c53f" style="width:20%" class="column"></div><div id="9c152043-7eff-4b3a-baa1-e7b9d1f6d0c8" style="width:22.5%" class="column"></div><div id="ca94d40b-8548-4a78-ba23-5d2bd0701be7" style="width:22.5%" class="column"></div><div id="f4608a25-2cd8-486c-8c5f-90345389f678" style="width:7.500000000000001%" class="column"></div><div id="f3ae175a-482b-4eee-b609-2faf08e905e4" style="width:27.500000000000004%" class="column"></div></div><div id="121afc89-995a-81fb-a383-f615f1dc2e28" class="column-list"><div id="121afc89-995a-813b-bcb2-c06eeab4cae3" style="width:50%" class="column"><figure id="121afc89-995a-812d-beb2-d8cafed5e8d5" class="image"><a href="Art%20121afc89995a81d98852c03bf34ab26c/Untitled.jpeg"><img style="width:408.99456787109375px" src="Art%20121afc89995a81d98852c03bf34ab26c/Untitled.jpeg"/></a></figure><p id="121afc89-995a-81e7-b1fa-d7d33af0deaa" class="">
+</p><figure id="121afc89-995a-81f4-8d29-fff55f13b64c" class="image"><a href="Art%20121afc89995a81d98852c03bf34ab26c/Untitled%201.jpeg"><img style="width:624px" src="Art%20121afc89995a81d98852c03bf34ab26c/Untitled%201.jpeg"/></a></figure><p id="121afc89-995a-81b6-9d86-f39e0b480692" class="">
+</p><figure id="121afc89-995a-81cc-925a-e9c7348e646b" class="image"><a href="Art%20121afc89995a81d98852c03bf34ab26c/Untitled%202.jpeg"><img style="width:432px" src="Art%20121afc89995a81d98852c03bf34ab26c/Untitled%202.jpeg"/></a></figure><p id="121afc89-995a-8176-9278-fa101771df86" class="">
+</p><figure id="121afc89-995a-81dd-8006-e38228e25f73" class="image"><a href="Art%20121afc89995a81d98852c03bf34ab26c/Untitled%203.jpeg"><img style="width:408.99456787109375px" src="Art%20121afc89995a81d98852c03bf34ab26c/Untitled%203.jpeg"/></a></figure><p id="121afc89-995a-810d-a7a1-f877eff44c33" class="">
+</p><figure id="121afc89-995a-81c1-83ad-ccbfe3de1cb4" class="image"><a href="Art%20121afc89995a81d98852c03bf34ab26c/Untitled%204.jpeg"><img style="width:480px" src="Art%20121afc89995a81d98852c03bf34ab26c/Untitled%204.jpeg"/></a></figure><p id="121afc89-995a-81fc-b349-d4e60df9f682" class="">
+</p><figure id="121afc89-995a-81dc-8d0c-c6e8a783e995" class="image"><a href="Art%20121afc89995a81d98852c03bf34ab26c/Untitled%205.jpeg"><img style="width:408.99456787109375px" src="Art%20121afc89995a81d98852c03bf34ab26c/Untitled%205.jpeg"/></a></figure><p id="121afc89-995a-81d0-89d1-f93283a25294" class="">
+</p><figure id="121afc89-995a-81f4-bd9c-d83c9e748a83" class="image"><a href="Art%20121afc89995a81d98852c03bf34ab26c/Untitled%206.jpeg"><img style="width:432px" src="Art%20121afc89995a81d98852c03bf34ab26c/Untitled%206.jpeg"/></a></figure><p id="121afc89-995a-81f9-b487-d86fcf8e160b" class="">
+</p><figure id="121afc89-995a-81bb-af42-f62b34b739ac" class="image"><a href="Art%20121afc89995a81d98852c03bf34ab26c/Untitled%207.jpeg"><img style="width:432px" src="Art%20121afc89995a81d98852c03bf34ab26c/Untitled%207.jpeg"/></a></figure><p id="121afc89-995a-810e-bb54-e6154e34b7c2" class="">
+</p><figure id="121afc89-995a-8154-9c26-e72a713ab433" class="image"><a href="Art%20121afc89995a81d98852c03bf34ab26c/Untitled%208.jpeg"><img style="width:384px" src="Art%20121afc89995a81d98852c03bf34ab26c/Untitled%208.jpeg"/></a></figure><p id="121afc89-995a-81de-948c-fa06e7751d73" class="">
+</p><figure id="121afc89-995a-8108-8972-e65088de81bd" class="image"><a href="Art%20121afc89995a81d98852c03bf34ab26c/Untitled%209.jpeg"><img style="width:384px" src="Art%20121afc89995a81d98852c03bf34ab26c/Untitled%209.jpeg"/></a></figure></div><div id="121afc89-995a-8174-b6a4-e38291292891" style="width:50%" class="column"><figure id="121afc89-995a-8138-b241-eafc627d79df" class="image"><a href="Art%20121afc89995a81d98852c03bf34ab26c/Untitled%2010.jpeg"><img style="width:480px" src="Art%20121afc89995a81d98852c03bf34ab26c/Untitled%2010.jpeg"/></a></figure><figure id="121afc89-995a-81e6-8c2a-cddeea84914e" class="image"><a href="Art%20121afc89995a81d98852c03bf34ab26c/Untitled%2011.jpeg"><img style="width:408.99456787109375px" src="Art%20121afc89995a81d98852c03bf34ab26c/Untitled%2011.jpeg"/></a></figure><p id="121afc89-995a-811c-9c7c-f14c49c2ecf5" class="">
+</p><figure id="121afc89-995a-8180-980c-ce8e69a6428d" class="image"><a href="Art%20121afc89995a81d98852c03bf34ab26c/Untitled%2012.jpeg"><img style="width:408.99456787109375px" src="Art%20121afc89995a81d98852c03bf34ab26c/Untitled%2012.jpeg"/></a></figure><p id="121afc89-995a-8142-a2f7-ec743bc5aa42" class="">
+</p><figure id="121afc89-995a-8179-b530-c2b764a63fee" class="image"><a href="Art%20121afc89995a81d98852c03bf34ab26c/Untitled%2013.jpeg"><img style="width:408.99456787109375px" src="Art%20121afc89995a81d98852c03bf34ab26c/Untitled%2013.jpeg"/></a></figure><p id="121afc89-995a-815a-af2f-c95889506b1f" class="">
+</p><figure id="121afc89-995a-81f9-90cd-f3be33f28c11" class="image"><a href="Art%20121afc89995a81d98852c03bf34ab26c/Untitled%2014.jpeg"><img style="width:408.99456787109375px" src="Art%20121afc89995a81d98852c03bf34ab26c/Untitled%2014.jpeg"/></a></figure><p id="121afc89-995a-81dc-875b-faffec8f63fe" class="">
+</p><figure id="121afc89-995a-8160-a46c-d8560d97da67" class="image"><a href="Art%20121afc89995a81d98852c03bf34ab26c/Untitled%2015.jpeg"><img style="width:480px" src="Art%20121afc89995a81d98852c03bf34ab26c/Untitled%2015.jpeg"/></a></figure><p id="121afc89-995a-8137-9d17-f867b2a83329" class="">
+</p><figure id="121afc89-995a-8108-b175-c0dfcd79fa18" class="image"><a href="Art%20121afc89995a81d98852c03bf34ab26c/Untitled%2016.jpeg"><img style="width:408.99456787109375px" src="Art%20121afc89995a81d98852c03bf34ab26c/Untitled%2016.jpeg"/></a></figure><p id="121afc89-995a-81f1-a263-dd5ab0cf11c4" class="">
+</p><figure id="121afc89-995a-817f-b1d1-fc45e0426823" class="image"><a href="Art%20121afc89995a81d98852c03bf34ab26c/Untitled%2017.jpeg"><img style="width:528px" src="Art%20121afc89995a81d98852c03bf34ab26c/Untitled%2017.jpeg"/></a></figure><p id="121afc89-995a-8181-b96f-dcfbb8e0c984" class="">
+</p><figure id="121afc89-995a-81f1-b012-d600b3620d3b" class="image"><a href="Art%20121afc89995a81d98852c03bf34ab26c/Untitled%2018.jpeg"><img style="width:288px" src="Art%20121afc89995a81d98852c03bf34ab26c/Untitled%2018.jpeg"/></a></figure><p id="121afc89-995a-8173-b4ea-ea072ee0b79d" class="">
+</p><figure id="121afc89-995a-81a5-a411-e2a149ebd274" class="image"><a href="Art%20121afc89995a81d98852c03bf34ab26c/Untitled%2019.jpeg"><img style="width:408.99456787109375px" src="Art%20121afc89995a81d98852c03bf34ab26c/Untitled%2019.jpeg"/></a></figure><p id="121afc89-995a-8139-aa33-d9721dafd454" class="">
+</p><figure id="121afc89-995a-818c-ae8a-c0ce0432c97f" class="image"><a href="Art%20121afc89995a81d98852c03bf34ab26c/Untitled%2020.jpeg"><img style="width:288px" src="Art%20121afc89995a81d98852c03bf34ab26c/Untitled%2020.jpeg"/></a></figure></div></div><div id="121afc89-995a-814c-b629-c39ab49388c5" class="column-list"><div id="121afc89-995a-81ae-91a6-cc1c5bb1f4ab" style="width:45.83333333333333%" class="column"><p id="121afc89-995a-819a-9f4a-fd9e5c17c7b9" class="">
+</p></div><div id="121afc89-995a-815a-b21c-d366222c70d0" style="width:24.999999999999993%" class="column"><p id="121afc89-995a-81d3-8575-ee63504889bc" class="">
+</p><p id="121afc89-995a-812a-ba6f-c59007caa666" class="">
+</p><p id="121afc89-995a-810c-b73a-d4cd00ea0114" class="">
+</p></div><div id="121afc89-995a-8111-b2ce-d5b6e6feac39" style="width:29.166666666666714%" class="column"><p id="121afc89-995a-815b-afb9-c9d2a1e9ce57" class="">
+</p></div></div><p id="121afc89-995a-8128-8d5a-eb55e6daa1a4" class="">
+</p><p id="121afc89-995a-8194-a601-da24f460317a" class=""><mark class="highlight-gray">©️2023 Navreet Kaur</mark></p><p id="121afc89-995a-81b0-87c8-d4166371abb7" class="">
+</p></div></article><span class="sans" style="font-size:14px;padding-top:2em"></span></body></html>
